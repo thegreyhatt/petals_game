@@ -18,7 +18,7 @@
 			background-color: red;
 			color: white;
 			border-radius: 5px;
-			width: 25%;
+			width: 50%;
 			margin: auto;
 			padding: 5px;
 		}
@@ -117,7 +117,7 @@
   		echo "<h3>How many petals around the rose?</h3>";
 ?>
 		<form method="post">
-			<input type="text" name="guess" autofocus="" >
+			<input type="text" name="guess" autofocus="" placeholder="Your answer here..." >
 			<input type="hidden" name="numPetals" value="<?php echo($numPetals) ?>">
 			<br>
 			<input type="submit" value="Submit Guess" >
