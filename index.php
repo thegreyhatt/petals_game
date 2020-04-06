@@ -12,7 +12,15 @@
 			color: green;
 		}
 		.red{
-			color: red;
+			/*color: red;*/
+		}
+		.wrong-answer{
+			background-color: red;
+			color: white;
+			border-radius: 5px;
+			width: 25%;
+			margin: auto;
+			padding: 5px;
 		}
 	</style>
 </head>
@@ -41,10 +49,12 @@
 		}elseif ($guess == $numPetals) {
 			echo "<h1 class='green' >You Got It!</h1>";
 		}else{
+			echo "<div class='wrong-answer' >";
 			echo "<span class='red' >";
 			echo "From last try you guessed: ".$guess."<br>";
 			echo "The correct answer was: ".$numPetals." petals around the rose.";
 			echo "</span>";
+			echo "</div>";
 		}
 
 	}
